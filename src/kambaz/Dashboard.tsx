@@ -140,7 +140,7 @@ export default function Dashboard({
                 <Link
                   to={
                     isEnrolled(course._id)
-                      ? `/Kanbas/Courses/${course._id}/Home`
+                      ? `/Kambaz/Courses/${course._id}/Home`
                       : ``
                   }
                   className="wd-dashboard-course-link text-decoration-none text-dark"
