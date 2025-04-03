@@ -21,8 +21,8 @@ export default function Account() {
                 <Navigate
                   to={
                     currentUser
-                      ? "/Kanbas/Account/Profile"
-                      : "/Kanbas/Account/Signin"
+                      ? "/Kambaz/Account/Profile"
+                      : "/Kambaz/Account/Signin"
                   }
                 />
               }
