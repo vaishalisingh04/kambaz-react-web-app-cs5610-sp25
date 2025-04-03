@@ -2,7 +2,7 @@ import React from "react";
 import Kambaz from "./kambaz";
 import Labs from "./Labs";
 import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
-import store from "./kanbas/store";
+import store from "./Kambaz/store";
 import { Provider } from "react-redux";
 
 function App() {
