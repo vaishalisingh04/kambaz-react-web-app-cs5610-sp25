@@ -13,7 +13,7 @@ export default function Signin() {
     const user = await client.signin(credentials);
     if (!user) return;
     dispatch(setCurrentUser(user));
-    navigate("/Kanbas/Account/Profile");
+    navigate("/Kambaz/Account/Profile");
   };
 
   return (
@@ -48,7 +48,7 @@ export default function Signin() {
       >
         Sign in{" "}
       </button>
-      <Link id="wd-signup-link" to="/Kanbas/Account/Signup">
+      <Link id="wd-signup-link" to="/Kambaz/Account/Signup">
         Sign up
       </Link>
     </div>
