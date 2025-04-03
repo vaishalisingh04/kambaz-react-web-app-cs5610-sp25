@@ -1,5 +1,5 @@
 import React from "react";
-import kambaz from "./kambaz";
+import Kambaz from "./Kambaz";
 import Labs from "./Labs";
 import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import store from "./Kambaz/store";
@@ -12,7 +12,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/Labs/*" element={<Labs />} />
-            <Route path="/kambaz/*" element={<kambaz />} />
+            <Route path="/Kambaz/*" element={<Kambaz />} />
             <Route path="/" element={<Navigate to="/Labs" />} />
           </Routes>
         </div>
