@@ -63,10 +63,10 @@ export default function AssignmentEditor() {
         );
         dispatch(updateAssignment(updatedAssignment)); // Dispatch Redux action to update assignment
       }
-      navigate(`/Kanbas/Courses/${cid}/Assignments`); // Navigate back to the assignments page
+      navigate(`/Kambaz/Courses/${cid}/Assignments`); // Navigate back to the assignments page
     } catch (error) {
       console.error("Error saving assignment:", error);
-      navigate(`/Kanbas/Courses/${cid}/Assignments`);
+      navigate(`/Kambaz/Courses/${cid}/Assignments`);
     }
   };
 
@@ -288,7 +288,7 @@ export default function AssignmentEditor() {
       <div className="d-flex justify-content-end mt-4">
         {/* Cancel button navigates back to the assignments page for the current course */}
         <Link
-          to={`/Kanbas/Courses/${cid}/Assignments`}
+          to={`/Kambaz/Courses/${cid}/Assignments`}
           className="btn btn-secondary me-2"
         >
           Cancel
