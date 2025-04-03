@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router";
 import Account from "./Account";
 import Dashboard from "./Dashboard";
-import KanbasNavigation from "./Navigation";
+import KambazNavigation from "./Navigation";
 import Courses from "./Courses";
 import "./style.css";
 
@@ -13,7 +13,7 @@ import Session from "./Account/Session";
 import * as userClient from "./Account/client";
 import * as courseClient from "./Courses/client";
 
-export default function Kanbas() {
+export default function Kambaz() {
   // enrolled courses
   const [courses, setCourses] = useState<any[]>([]);
   //all courses
@@ -85,11 +85,11 @@ export default function Kanbas() {
   return (
     // <Provider store={store}>
     <Session>
-      <div id="wd-kanbas">
-        <KanbasNavigation />
+      <div id="wd-Kambaz">
+        <KambazNavigation />
         <div className="wd-main-content-offset p-3">
           <Routes>
-            <Route path="/" element={<Navigate to="/Kanbas/Dashboard" />} />
+            <Route path="/" element={<Navigate to="/Kambaz/Dashboard" />} />
             <Route path="/Account/*" element={<Account />} />
             <Route
               path="Dashboard"
