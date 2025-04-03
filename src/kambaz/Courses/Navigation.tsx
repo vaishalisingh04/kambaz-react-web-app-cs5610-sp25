@@ -19,7 +19,7 @@ export default function CoursesNavigation() {
     >
       {links.map((link) => (
         <Link
-          to={`/Kanbas/Courses/${cid}/${link}`}
+          to={`/Kambaz/Courses/${cid}/${link}`}
           id="wd-course-home-link"
           className={`list-group-item ${
             pathname.includes(link) ? "active" : "text-danger"
