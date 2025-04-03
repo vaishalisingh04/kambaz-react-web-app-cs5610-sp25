@@ -7,19 +7,19 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-export default function KanbasNavigation() {
+export default function KambazNavigation() {
   const { pathname } = useLocation();
   const { currentUser } = useSelector((state: any) => state.accountReducer);
   const links = [
-    { label: "Dashboard", path: "/Kanbas/Dashboard", icon: AiOutlineDashboard },
-    { label: "Courses", path: "/Kanbas/Dashboard", icon: LiaBookSolid },
-    { label: "Calendar", path: "/Kanbas/Calendar", icon: FaRegCalendarAlt },
-    { label: "Inbox", path: "/Kanbas/Inbox", icon: IoMailOpenOutline },
+    { label: "Dashboard", path: "/Kambaz/Dashboard", icon: AiOutlineDashboard },
+    { label: "Courses", path: "/Kambaz/Dashboard", icon: LiaBookSolid },
+    { label: "Calendar", path: "/Kambaz/Calendar", icon: FaRegCalendarAlt },
+    { label: "Inbox", path: "/Kambaz/Inbox", icon: IoMailOpenOutline },
     { label: "Labs", path: "/Labs", icon: BsPersonWorkspace },
   ];
   return (
     <div
-      id="wd-kanbas-navigation"
+      id="wd-Kambaz-navigation"
       style={{ width: 115 }}
       className="list-group rounded-0 position-fixed
          bottom-0 top-0 d-none d-md-block bg-black z-2"
@@ -34,7 +34,7 @@ export default function KanbasNavigation() {
       </a>
 
       <Link
-        to={currentUser ? "/Kanbas/Account/Profile" : "/Kanbas/Account/Signin"}
+        to={currentUser ? "/Kambaz/Account/Profile" : "/Kambaz/Account/Signin"}
         className={`list-group-item text-center border-0 bg-black
             ${
               pathname.includes("Account")
