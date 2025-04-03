@@ -49,7 +49,7 @@ export default function Assignments() {
   }
 
   const handleAddAssignment = () => {
-    navigate(`/Kanbas/Courses/${cid}/Assignments/New`);
+    navigate(`/Kambaz/Courses/${cid}/Assignments/New`);
   };
 
   return (
@@ -116,7 +116,7 @@ export default function Assignments() {
                 {currentUser?.role === "FACULTY" ? (
     <a
       className="wd-assignment-link"
-      href={`#/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}
+      href={`#/Kambaz/Courses/${cid}/Assignments/${assignment._id}`}
     >
       {assignment.title}
     </a>
